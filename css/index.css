@@ -1,1 +1,356 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 2%;
+  width: 20%;
+  font-size: 3.6rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  nav a {
+    padding: 5%;
+    width: 50%;
+  }
+}
+nav a:hover {
+  color: lightpink;
+  background-color: black;
+}
+nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+header {
+  margin: 1%;
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 500px) {
+  header {
+    margin-bottom: 3%;
+  }
+}
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header div {
+    flex-direction: column;
+  }
+}
+header .titles {
+  flex-direction: column;
+  margin: 2%;
+  color: white;
+}
+header h1 {
+  font-size: 6rem;
+  text-align: center;
+  font-family: 'Ovo', serif;
+}
+header h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Ovo', serif;
+}
+header img {
+  width: 40vh;
+  border-radius: 50%;
+  margin: 2%;
+}
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid pink;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  .intro {
+    flex-direction: column;
+    margin-bottom: 3%;
+  }
+}
+.intro h2 {
+  font-size: 3rem;
+  font-family: 'Bitter', serif;
+}
+.intro p {
+  font-size: 1.5rem;
+  font-family: 'Old Standard TT', serif;
+  margin: 1%;
+  line-height: 1.5;
+}
+.intro .first {
+  background: mistyrose;
+  margin: 2%;
+  padding: 2%;
+}
+.intro .first h2 {
+  padding-bottom: 2%;
+}
+.intro .second {
+  background: mistyrose;
+  margin: 2%;
+  padding: 2%;
+}
+.intro .second h2 {
+  padding-bottom: 2%;
+}
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid pink;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  .experience {
+    margin-bottom: 3%;
+  }
+}
+.experience h2,
+.experience h3,
+.experience h4 {
+  font-family: 'Ovo', serif;
+}
+.experience h2 {
+  font-size: 3rem;
+  margin-top: 1%;
+}
+.experience h3 {
+  font-size: 2.5rem;
+}
+.experience h4 {
+  font-size: 2rem;
+}
+.experience p {
+  font-size: 1.5rem;
+  padding: 1%;
+  font-family: 'Old Standard TT', serif;
+  line-height: 1.5;
+}
+.experience .firstjob {
+  background: mistyrose;
+  margin: 1%;
+  padding: 1%;
+}
+.experience .secondjob {
+  background: mistyrose;
+  margin: 1%;
+  padding: 1%;
+}
+.experience .thirdjob {
+  background: mistyrose;
+  margin: 1%;
+  padding: 1%;
+}
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid pink;
+  margin: 1%;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  .education {
+    margin-bottom: 3%;
+  }
+}
+.education h2,
+.education h3,
+.education h4,
+.education h5 {
+  font-family: 'Ovo', serif;
+}
+.education h2 {
+  font-size: 3rem;
+  padding-bottom: 1%;
+}
+.education h3 {
+  font-size: 2rem;
+}
+.education h4 {
+  font-size: 1.5rem;
+}
+.education h5 {
+  font-size: 1rem;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons a {
+  text-decoration: none;
+  color: black;
+  padding: 2%;
+  width: 20%;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.icons div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
